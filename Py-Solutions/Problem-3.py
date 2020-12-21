@@ -6,6 +6,5 @@ def isPrime(num):
 
 def largestPrimeFactor(num):
   return [i for i in range(2, int(math.sqrt(num)) + 1) if num % i == 0 and isPrime(i)][-1]
-    
-answer = largestPrimeFactor(600851475143)
-print(answer)
+
+print(largestPrimeFactor(600851475143))
