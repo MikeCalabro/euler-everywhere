@@ -7,9 +7,6 @@ def fib_maker(limit):
   return fib_arr
 
 def even_fib_summer(fib_list):
-  answer = sum([i for i in fib_list if i % 2 == 0])
-  return answer
+  return sum([i for i in fib_list if i % 2 == 0])
 
-my_list = fib_maker(4000000)
-final_answer = even_fib_summer(my_list)
-print(final_answer)
+print(even_fib_summer(fib_maker(4000000)))
