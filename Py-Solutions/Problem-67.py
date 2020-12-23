@@ -1,3 +1,5 @@
+# Find the maximum total from top to bottom of the triangle below:
+
 x = ['59',
 '73 41',
 '52 40 09',
