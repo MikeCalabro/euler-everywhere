@@ -19,8 +19,7 @@ def abundantsum(i):
   return any(i-a in ab_list for a in ab_list)
 
 def main():
-  print sum([i for i in range(1,28124) if not abundantsum(i)])
+  print(sum([i for i in range(1,28124) if not abundantsum(i)]))
 
 if __name__ == "__main__":
     main()
-    
