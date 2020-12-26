@@ -1,3 +1,5 @@
+# How many circular primes are there below one million?
+
 def isPrime(num):
   if num < 2:
     return False
