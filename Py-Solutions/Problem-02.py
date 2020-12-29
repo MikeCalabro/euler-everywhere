@@ -9,4 +9,9 @@ def fib_maker(limit):
 def even_fib_summer(fib_list):
   return sum([i for i in fib_list if i % 2 == 0])
 
-print(even_fib_summer(fib_maker(4000000)))
+def main():
+  print(even_fib_summer(fib_maker(4000000)))
+
+if __name__ == "__main__":
+    main()
+    

@@ -11,13 +11,14 @@ def isPalindrome(num):
 
 def largestPalindrome(limit):
   max = [0,0,0]
-  for i in range(900,limit):
-    for j in range(900,limit):
+  for i in range(limit):
+    for j in range(limit):
       if isPalindrome(i * j) and i * j > max[0]:
         max = [i*j,i,j]
   return(max)
 
-print(largestPalindrome(1000)[0])
+def main():
+  print(largestPalindrome(1000)[0])
 
-
-
+if __name__ == "__main__":
+    main()

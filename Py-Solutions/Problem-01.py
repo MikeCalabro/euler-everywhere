@@ -4,5 +4,9 @@
 def three_or_five(limit):
   return sum([i for i in range(limit) if i % 3 == 0 or i % 5 == 0])
 
-print(three_or_five(1000))
+def main():
+  print(three_or_five(1000))
  
+if __name__ == "__main__":
+    main()
+    

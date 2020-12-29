@@ -22,4 +22,8 @@ def smallestAllDivis(lim):
       return(start)
     start += lim
 
-print(smallestAllDivis(20))
+def main():
+  print(smallestAllDivis(20))
+
+if __name__ == "__main__":
+    main()

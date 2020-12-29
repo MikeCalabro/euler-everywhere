@@ -7,4 +7,9 @@ def isPrime(num):
 def largestPrimeFactor(num):
   return [i for i in range(2, int(math.sqrt(num)) + 1) if num % i == 0 and isPrime(i)][-1]
 
-print(largestPrimeFactor(600851475143))
+def main():
+  print(largestPrimeFactor(600851475143))
+
+if __name__ == "__main__":
+    main()
+    
