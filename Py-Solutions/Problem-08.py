@@ -43,8 +43,8 @@ if __name__ == '__main__':
   main()
 
 
-
-
+# DISREGARD FUNCTIONS BELOW ... WRONG APPROACH
+#
 # Supposed to treat this matrix as one long number
 # So the work below is unnecessary ... still fun to implement though!
 
