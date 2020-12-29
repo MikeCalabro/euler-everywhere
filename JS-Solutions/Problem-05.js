@@ -34,7 +34,7 @@ const allDivisorsWork = (num, limit) => {
   return true;
 }
 
-const evenlyDivis = (limit) => {
+const SmallestEvenlyDivis = (limit) => {
   smallest = minPrimeProduct(limit);
   while (smallest % limit != 0) {
     smallest -= 1;
@@ -45,4 +45,4 @@ const evenlyDivis = (limit) => {
   return smallest;
 }
 
-console.log(evenlyDivis(20));
+console.log(SmallestEvenlyDivis(20));
