@@ -2,7 +2,12 @@
 import math
 
 def isPrime(num):
-  return sum([i for i in range(1, int(math.sqrt(num)) + 1) if num % i == 0]) == 1
+  if num < 2:
+    return False
+  elif num ==2:
+    return True
+  else:
+    return sum([i for i in range(1, int(num**0.5) + 1) if num % i == 0]) == 1
 
 def primeFinder(n):
   counter = 1
