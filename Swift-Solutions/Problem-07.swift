@@ -17,15 +17,15 @@ func isPrime(num: Int) -> Bool {
 }
 
 func nthPrime(n: Int) -> Int {
-  var primeList: [Int] = []
-  var i: Int = 2
-  while primeList.count < n {
-    if isPrime(num: i) {
-      primeList.append(i)
-    }
+  var primeCount: Int = 0
+  var i: Int = 0
+  while primeCount < n {
     i += 1
+    if isPrime(num: i) {
+      primeCount += 1
+    }
   }
-  return primeList[primeList.count - 1]
+  return i
 }
 
 print(nthPrime(n: 10_001))
