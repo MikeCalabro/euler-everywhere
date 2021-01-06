@@ -22,25 +22,36 @@ let rawNum : String = """
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450
 """
+
 func makeCharacterArray(of rawData: String) -> Array<Character> {
+
+  // Converts string with spaces into array of words (in this case, numbers)
   let numArr : [String] = rawData.components(separatedBy: "\n")
+
+  // Turns Array of words (numbers) into one long string
   var strNum : String = ""
   for i in numArr {
     strNum += i
   }
+
+  // Turns long string into array of the characters (in this case, digits)
   let digArr = Array(strNum)
+
   return digArr
 }
 
 func largestDigitProduct(rawData: String, numDigits: Int) -> Int {
   let digitArray = makeCharacterArray(of: rawData)
   var maxProduct: Int = 0
-  var product: Int = 1
-  var nextUp: Int = 0
+  var product, nextUp: Int
   let limit: Int = digitArray.count - numDigits
   for i in 0...limit {
     product = 1
     for j in 0..<numDigits {
+
+      // digitArray[i + j] is of type 'Character', 
+      // so I have to convert to String before I can convert to type Int
+      // It took me so long to figure out how to do this smh
       nextUp = Int(String(digitArray[i + j])) ?? 0
       product *= nextUp
     }
@@ -53,4 +64,4 @@ func largestDigitProduct(rawData: String, numDigits: Int) -> Int {
 
 let answer: Int = largestDigitProduct(rawData: rawNum, numDigits: 13)
 
-print(answer)
+print("The answer is \(answer)")
