@@ -1,3 +1,4 @@
+// Find the largest product of 13 consecutive digits in the following 1000 digit number
 import Foundation
 
 let rawNum : String = """
