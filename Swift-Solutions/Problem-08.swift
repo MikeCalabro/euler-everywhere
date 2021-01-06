@@ -22,11 +22,35 @@ let rawNum : String = """
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450
 """
-let numArr : [String] = rawNum.components(separatedBy: "\n")
-var strNum : String = ""
-for i in numArr {
-  strNum += i
+func makeCharacterArray(of rawData: String) -> Array<Character> {
+  let numArr : [String] = rawData.components(separatedBy: "\n")
+  var strNum : String = ""
+  for i in numArr {
+    strNum += i
+  }
+  let digArr = Array(strNum)
+  return digArr
 }
-let digArr = Array(strNum)
-print(digArr)
- // WTFFFFF
+
+func largestDigitProduct(rawData: String, numDigits: Int) -> Int {
+  let digitArray = makeCharacterArray(of: rawData)
+  var maxProduct: Int = 0
+  var product: Int = 1
+  var nextUp: Int = 0
+  let limit: Int = digitArray.count - numDigits
+  for i in 0...limit {
+    product = 1
+    for j in 0..<numDigits {
+      nextUp = Int(String(digitArray[i + j])) ?? 0
+      product *= nextUp
+    }
+    if product > maxProduct {
+      maxProduct = product
+    }
+  }
+  return maxProduct
+}
+
+let answer: Int = largestDigitProduct(rawData: rawNum, numDigits: 13)
+
+print(answer)
