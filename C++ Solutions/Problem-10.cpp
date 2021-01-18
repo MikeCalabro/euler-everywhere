@@ -1,4 +1,6 @@
-/* Find the sum of all the primes below two million. */
+/* 
+Find the sum of all the primes below two million. 
+*/
 
 #include <iostream>
 using namespace std;

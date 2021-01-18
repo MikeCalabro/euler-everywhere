@@ -8,9 +8,10 @@ using namespace std;
 bool isPrime(double num);
 int largestPrimeFactor(double num);
 
-int main(void) {
+int main() {
   int x = largestPrimeFactor(13195);
   cout << x << "\n";
+  return 0;
 }
 
 bool isPrime(double num) {

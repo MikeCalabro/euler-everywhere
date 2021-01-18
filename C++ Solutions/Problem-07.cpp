@@ -1,4 +1,6 @@
-/* What is the 10 001st prime number? */
+/* 
+What is the 10 001st prime number? 
+*/
 
 #include <iostream>
 using namespace std;
@@ -12,7 +14,7 @@ int main()
   cout << "Which Prime do yout want to know?\n";
   cin >> n;
   int answer = nthPrime(n);
-  cout << "The " + to_string(n) + "th Prime is " + to_string(answer);
+  cout << "The " + to_string(n) + "th Prime is " + to_string(answer) << "\n";
   return 0;
 }
 

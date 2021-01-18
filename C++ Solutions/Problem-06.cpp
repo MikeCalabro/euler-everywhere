@@ -9,7 +9,8 @@ int squareMinusSum(int limit);
 
 int main() {
   int answer = squareMinusSum(100);
-  cout << answer;
+  cout << answer << "\n";
+  return 0;
 }
 
 int sumOfSquares(int limit) {

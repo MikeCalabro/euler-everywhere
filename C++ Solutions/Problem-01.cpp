@@ -8,9 +8,10 @@ using namespace std;
 
 int threesAndFives(int limit);
 
-int main(void) {
+int main() {
   int answer = threesAndFives(1000);
   cout << answer << "\n";
+  return 0;
 }
 
 int threesAndFives(int limit) {

@@ -7,9 +7,10 @@ using namespace std;
 
 int evenFibSum(int limit);
 
-int main(void) {
+int main() {
   int answer = evenFibSum(4000000);
   cout << answer << "\n";
+  return 0;
 }
 
 int evenFibSum(int limit) {

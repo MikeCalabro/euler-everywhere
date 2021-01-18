@@ -1,4 +1,7 @@
-/* Find the largest palindrome made from the product of two 3-digit numbers. */
+/* 
+Find the largest palindrome made from the product of two 3-digit numbers. 
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -7,7 +10,7 @@ bool isPalindrome(int num);
 int largestPalindromeProduct(int limit);
 
 int main() {
-  cout << largestPalindromeProduct(1000);
+  cout << largestPalindromeProduct(1000) << "\n";
   return 0;
 }
 
