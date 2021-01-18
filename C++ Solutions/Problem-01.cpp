@@ -10,7 +10,7 @@ int threesAndFives(int limit);
 
 int main(void) {
   int answer = threesAndFives(1000);
-  cout << answer;
+  cout << answer << "\n";
 }
 
 int threesAndFives(int limit) {
