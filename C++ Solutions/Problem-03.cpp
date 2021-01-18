@@ -1,4 +1,7 @@
-/* What is the largest prime factor of the number 600851475143? */
+/*
+ What is the largest prime factor of the number 13195? 
+ */
+
 #include <iostream>
 using namespace std;
 
@@ -7,7 +10,7 @@ int largestPrimeFactor(double num);
 
 int main(void) {
   int x = largestPrimeFactor(13195);
-  cout << x;
+  cout << x << "\n";
 }
 
 bool isPrime(double num) {
